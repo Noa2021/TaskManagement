@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="task-management-react-app\src\components\AddTask.tsx" />
+    <None Remove="task-management-react-app\src\components\home.tsx" />
+    <None Remove="task-management-react-app\src\components\TaskItem.tsx" />
+    <None Remove="task-management-react-app\src\components\TasksList.tsx" />
+    <None Remove="task-management-react-app\src\entities\TaskManagmentEntities.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="task-management-react-app\src\components\TaskItem.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="task-management-react-app\src\components\AddTask.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="task-management-react-app\src\components\TasksList.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="task-management-react-app\src\components\Home.tsx" />
+    <TypeScriptCompile Include="task-management-react-app\src\entities\TaskManagmentEntities.ts" />
+  </ItemGroup>
+
+</Project>

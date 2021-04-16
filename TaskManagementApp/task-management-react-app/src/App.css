@@ -1,0 +1,16 @@
+﻿body {
+    background-color: #e6ebed !important;
+}
+
+.clickable{
+    cursor: pointer !important;
+}
+
+.underline {
+    text-decoration: underline
+}
+
+.fh-card-body {
+    height: 75vh;
+    overflow-y: auto;
+}
